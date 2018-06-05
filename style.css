@@ -14,7 +14,7 @@ body text: avenir or lato (might wanna experiment with this)
 line-height: 2.1em
 body-text color: 6F6F6F
 margin top for major headings: 4%;
-
+margin bottom for major sections: 4%;
 */
 
 
@@ -24,28 +24,36 @@ margin top for major headings: 4%;
 	color: #fff;
 	font-size: 280%;
 	margin-left: 16%;
-	margin-top: 16%;
+	margin-top: 10%;
 }
+#name-title img{
+	width: 75%;
+	height: auto;
+}
+
 #banner-heading{
 	width: 100%;
 	height: 520px;
 	background-image: url(images/website-banner-final.jpg);
 	background-size: cover;
 }
+#about{
+	margin-bottom: 4%;
+}
 
 #about h1{
 	margin-left: 16%;
 	margin-right: 16%;
 	margin-top: 4%;
-	font-size: 320%;
+	font-size: 340%;
 }
 #about p{
 	font-family: 'Avenir next';
-	font-weight: normal;
-
+	/*font-family: 'Lato', sans-serif;*/
+	font-weight: lighter;
 	margin-left: 16%;
 	margin-right: 16%;
 	line-height: 2.2em;
-	font-size: 120%;
-	color: #6F6F6F;
+	font-size: 110%;
+	color: #000;
 }
