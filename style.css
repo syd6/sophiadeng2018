@@ -1,3 +1,15 @@
+
+
+@font-face {
+    font-family: 'Athelas';
+    src: url(fonts/Athelas-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Avenir next';
+    src: url(fonts/avenir-next/avenir-next-light.ttf);
+}
+
 body{
 	margin: 0px;
 }
@@ -5,14 +17,13 @@ h1{
 	font-family: 'Athelas';
 	font-weight: normal;
 }
-
 /*
 variables: 
 everything should be 16% from the screen
 headings are athelas normal
 body text: avenir or lato (might wanna experiment with this)
 line-height: 2.1em
-body-text color: 6F6F6F
+body-text color: 989898
 margin top for major headings: 4%;
 margin bottom for major sections: 4%;
 */
@@ -45,15 +56,25 @@ margin bottom for major sections: 4%;
 	margin-left: 16%;
 	margin-right: 16%;
 	margin-top: 4%;
-	font-size: 340%;
+	font-size: 360%;
+	color: #926565;
 }
 #about p{
 	font-family: 'Avenir next';
 	/*font-family: 'Lato', sans-serif;*/
-	font-weight: lighter;
 	margin-left: 16%;
 	margin-right: 16%;
 	line-height: 2.2em;
 	font-size: 110%;
-	color: #000;
+	color: #989898;
+}
+#portfolio{
+	background-color: #F3F3F3;
+	height: 900px;
+}
+#portfolio h1{
+	margin-left: 16%;
+	margin-right: 16%;
+	padding-top: 4%;
+	font-size: 270%;
 }
