@@ -46,6 +46,7 @@ margin bottom for major sections: 4%;
 	margin-right: 16%;
 	margin-top: 4%;
 	font-size: 340%;
+	color: #926565;
 }
 #about p{
 	font-family: 'Avenir next';
@@ -56,4 +57,14 @@ margin bottom for major sections: 4%;
 	line-height: 2.2em;
 	font-size: 110%;
 	color: #000;
+}
+#portfolio{
+	background-color: #F3F3F3;
+	height: 900px;
+}
+#portfolio h1{
+	margin-left: 16%;
+	margin-right: 16%;
+	padding-top: 4%;
+	font-size: 270%;
 }
