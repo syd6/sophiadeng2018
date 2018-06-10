@@ -19,6 +19,7 @@ function projectsList(){
 	'Redesigning the story of me.',
 	'Illustrating the benefits of Online Communication.',
 	'A collection of my artwork on Instagram.',
+	'An award-winning game designed for Game Design Course at Cornell.',
 	'An interactive experience for The Cornell Daily Sun.'];
 
 
