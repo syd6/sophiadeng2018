@@ -13,11 +13,20 @@ function projectsList(){
 	'project.html',
 	'project.html'];
 
+	var navDescriptions=['Allowing Businesses and Content creators to diversify their profiles.',
+	'A data visualization project that sheds light on the Class of 2021.',
+	'How costly is it to maintain human life?',
+	'Redesigning the story of me.',
+	'Illustrating the benefits of Online Communication.',
+	'A collection of my artwork on Instagram.',
+	'An interactive experience for The Cornell Daily Sun.'];
+
+
 	var divAttach = document.getElementById('projects-list');
 
 	var projectBuild = [];
 	for (var i=0;i<navTitles.length;i++){
-		var navbarItem = "<li><a href="+navLink[i]+">"+navTitles[i]+"</a></li>";
+		var navbarItem = "<li><p class='project-title'><a href="+navLink[i]+">"+navTitles[i]+"</a></p></li><li><p class='project-description'>"+navDescriptions[i]+"</p></li>";
 		projectBuild.push(navbarItem);
 	}
 	console.log(projectBuild);
