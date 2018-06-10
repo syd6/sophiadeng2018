@@ -93,8 +93,25 @@ margin bottom for major sections: 4%;
 
 #projects-list li{
 	list-style: none;
+	font-family: 'Avenir next';
 }
+
 
 #projects-list li a{
 	text-decoration: none;
+	color:  #926565;
+}
+
+#projects-list li a:hover{
+	text-decoration: none;
+	color:  #000;
+}
+.project-title{
+	font-size: 150%;
+}
+.project-description{
+	font-size: 100%;
+	font-style: italic;
+	margin-top: -1%;
+	color: #9D9D9D;
 }
