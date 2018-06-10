@@ -17,6 +17,7 @@ h1{
 	font-family: 'Athelas';
 	font-weight: normal;
 }
+
 /*
 variables: 
 everything should be 16% from the screen
@@ -77,4 +78,23 @@ margin bottom for major sections: 4%;
 	margin-right: 16%;
 	padding-top: 4%;
 	font-size: 270%;
+}
+
+/*project-list styling*/
+#projects-list{
+	margin-left: 16%;
+	margin-right: 16%;
+}
+
+#projects-list ul{
+	display: inline;
+
+}
+
+#projects-list li{
+	list-style: none;
+}
+
+#projects-list li a{
+	text-decoration: none;
 }
