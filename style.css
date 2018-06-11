@@ -29,7 +29,6 @@ margin top for major headings: 4%;
 margin bottom for major sections: 4%;
 */
 
-
 #name-title{
 	/*inline gets rid of weird padding on top*/
 	display: inline-block;
@@ -38,17 +37,19 @@ margin bottom for major sections: 4%;
 	margin-left: 16%;
 	margin-top: 10%;
 }
+
 #name-title img{
-	width: 75%;
+	width: 60%;
 	height: auto;
 }
 
 #banner-heading{
 	width: 100%;
-	height: 500px;
+	height: 508px;
 	background-image: url(images/website-banner-final.jpg);
 	background-size: cover;
 }
+
 #about{
 	margin-bottom: 4%;
 }
