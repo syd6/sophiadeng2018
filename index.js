@@ -36,3 +36,18 @@ function projectsList(){
 }
 
 projectsList();
+
+
+/*function iconsList(){
+	var buttonLinks=['https://www.linkedin.com/in/sophia-deng-41078410a/','https://instagram.com/dengsoph_art']
+	var fontAwesomeStrings=['fab fa-linkedin-in iconz','fab fa-instagram iconz']
+	var divAttach = document.getElementById('footer');
+	var projectBuild = []
+	for (var i=0;i<buttonLinks.length;i++){
+		var buttonItem = "<button class='external-links'><a href="+buttonLinks[i]+"><i class="+fontAwesomeStrings[i]+"></i></a></button>";
+		projectBuild.push(buttonItem);
+	}
+	divAttach.innerHTML = projectBuild.join("");
+}*/
+
+//iconsList();
