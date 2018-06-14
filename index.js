@@ -15,10 +15,10 @@ function projectsList(){
 
 	var navDescriptions=['Instagram Business is a powerful and versatile tool. How might we allow users to better showcase their talents?',
 	'Are the stereotypes about Cornell freshmen true? Watch us debunk or confirm some myths on this data visualization project.',
-	'Human mortality rates are decreasing, but at what cost? A practice in visual design of static data visualizations.',
-	'Designing an interactive exhibition that narrates the evolution and importance of our college newspaper, The Cornell Daily Sun.',
+	'Human mortality rates are decreasing, but at what cost? Practicing visual design in static data visualizations.',
+	'Designing an interactive exhibition that narrates the evolution and role of one of the nation&#39;s oldest college papers, The Cornell Daily Sun.',
 	'Retelling and redesigning the story of me through my portfolio.',
-	'How might we cultivate healthy relationships online? A series of illustrations highlights the benefits of communicating online.',
+	'How might we cultivate healthy relationships online? A series of illustrations demonstrates the benefits of connecting through the web.',
 	'An award-winning game designed for Introductory Game Design at Cornell.'];
 
 	var roles = ['UX, PRODUCT DESIGN',
