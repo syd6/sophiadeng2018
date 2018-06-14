@@ -71,10 +71,9 @@ margin bottom for major sections: 4%;
 	/*font-family: 'Lato', sans-serif;*/
 	margin-left: 16%;
 	margin-right: 16%;
-	line-height: 2.2em;
-	font-size: 100%;
+	line-height: 2.0em;
 	color: #989898;
-	font-size: 99%;
+	font-size: 90%;
 }
 #portfolio{
 	background-color: #272727;
