@@ -71,10 +71,10 @@ margin bottom for major sections: 4%;
 	/*font-family: 'Lato', sans-serif;*/
 	margin-left: 16%;
 	margin-right: 16%;
-	line-height: 2.2em;
-	font-size: 100%;
+	line-height: 1.8em;
 	color: #989898;
-	font-size: 100%;
+	font-size: 96%;
+	letter-spacing: 0.01em;
 }
 #portfolio{
 	background-color: #272727;
@@ -144,8 +144,8 @@ margin bottom for major sections: 4%;
 	margin-left: 16%;
 }
 .buttonz{
-	padding-right: 1.4%;
-	padding-top: 6%;
+	padding-right: 1.2%;
+	padding-top: 5%;
 	padding-bottom: 5%;
 	background-color: none;
 	border: none;
@@ -155,7 +155,7 @@ margin bottom for major sections: 4%;
 }
 .iconz{
 	color: white;
-	font-size: 36px;
+	font-size: 260%;
 }
 .iconz:hover{
 	color: #AEAEAE;
