@@ -220,7 +220,7 @@ margin bottom for major sections: 4%;
 
 #projects-list-2 li a:hover{
 	text-decoration: none;
-	color:  #fff;
+	color:  #000;
 	-webkit-transition: all .2s linear;
 }
 .project-title-2{
