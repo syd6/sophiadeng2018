@@ -1,4 +1,4 @@
-function projectsList(){
+function projectsList2(){
 	
 	var navTitles=['Instagram Concept', 'Who is the Class of 2021?', 'The Cost of Human Life', 'RAW Expo: The Cornell Daily Sun', 'Portfolio Evolution: Case Study', 'Hang: Illustration Series',  
 	'Operation Bitwise'];
@@ -29,10 +29,10 @@ function projectsList(){
 	'ILLUSTRATION BRANDING, VISUAL DESIGN',
 	'GAME DESIGN, ILLUSTRATION'];
 
-	var divAttach = document.getElementById('projects-list');
+	var divAttach = document.getElementById('projects-list-2');
 	var projectBuild = [];
 	for (var i=0;i<navTitles.length;i++){
-		var navbarItem = "<li><p class='project-title'><a href="+navLink[i]+">"+navTitles[i]+"</a></p></li><li><p class='project-description'>"+navDescriptions[i]+"</p></li><li><p class='project-role'>"+roles[i]+"</p></li>";
+		var navbarItem = "<li><p class='project-title-2'><a href="+navLink[i]+">"+navTitles[i]+"</a></p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li>";
 		projectBuild.push(navbarItem);
 	}
 	console.log(projectBuild);
@@ -40,20 +40,5 @@ function projectsList(){
 	divAttach.innerHTML = projectBuild.join("");
 }
 
-projectsList();
 
-
-/*function iconsList(){
-	var buttonLinks=['https://www.linkedin.com/in/sophia-deng-41078410a/','https://instagram.com/dengsoph_art']
-	var fontAwesomeStrings=['fab fa-linkedin-in iconz','fab fa-instagram iconz']
-	var divAttach = document.getElementById('footer');
-	var projectBuild = []
-	for (var i=0;i<buttonLinks.length;i++){
-		var buttonItem = "<button class='external-links'><a href="+buttonLinks[i]+"><i class="+fontAwesomeStrings[i]+"></i></a></button>";
-		projectBuild.push(buttonItem);
-	}
-	divAttach.innerHTML = projectBuild.join("");
-}*/
-
-//iconsList();
-
+projectsList2();
