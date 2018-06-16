@@ -56,7 +56,7 @@ margin bottom for major sections: 4%;
 	color: #fff;
 	margin-left: 16%;
 	padding-bottom: 10%;
-	padding-top: 10%;
+	padding-top: 12%;
 }
 
 #name-title img{
@@ -193,8 +193,9 @@ margin bottom for major sections: 4%;
 	display: inline-block;
 	margin-left: 16%;
 	margin-right:16%;
-	padding-top: 2%;
-	font-size: 170%;
+	padding-top: 3%;
+	padding-bottom: 0%;
+	font-size: 165%;
 }
 
 #projects-list-2{
