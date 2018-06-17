@@ -133,7 +133,25 @@ margin bottom for major sections: 4%;
 	padding-bottom: 2%;
 }
 
+.nav{
+	color: #C5C5C5;
+	margin-top: 3%;
+	margin-left: 16%;
+}
+.nav ul{
 
+	display: inline;
+}
+.nav li{
+	font-family: 'Avenir next';
+	list-style: none;
+	float: left;
+	display: inline;
+	padding-right: 1%;
+}
+.nav li a{
+	text-decoration: none;
+}
 /*project-list styling*/
 #projects-list{
 	padding-top: 4%;
@@ -202,7 +220,7 @@ margin bottom for major sections: 4%;
 #projects-list-2{
 	margin-left: 16%;
 	margin-right: 16%;
-	padding-top:1%;
+	
 }
 
 #projects-list-2 ul{
@@ -273,7 +291,7 @@ margin bottom for major sections: 4%;
 	color: #fff;
 }
 .footer-content a:hover{
-	
+	-webkit-transition: all .2s linear;
 	color: #666;
 }
 .buttonz{
