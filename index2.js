@@ -1,6 +1,11 @@
 function projectsList2(){
 	
-	var navTitles=['Instagram Concept', 'Who is the Class of 2021?', 'The Cost of Human Life', 'RAW Expo: The Cornell Daily Sun', 'Portfolio Evolution: Case Study', 'Hang: Illustration Series',  
+	var navTitles=['Instagram Concept', 
+	'Who is the Class of 2021?', 
+	'The Cost of Human Life', 
+	'RAW Expo: The Cornell Daily Sun', 
+	'Portfolio Evolution: Case Study', 
+	'Hang: Illustration Series',  
 	'Operation Bitwise'];
 
 	//they all link to the same page, which generates code based on what project you select
@@ -17,9 +22,9 @@ function projectsList2(){
 	'Are the stereotypes about Cornell freshmen true? Watch us debunk or confirm some myths on this data visualization project.',
 	'Human mortality rates are decreasing, but at what cost? Practicing visual design in static data visualizations.',
 	'Designing an interactive exhibition that narrates the evolution and role of one of the nation&#39;s oldest college papers, The Cornell Daily Sun.',
-	'Retelling and redesigning the story of me through my portfolio.',
-	'How might we cultivate healthy relationships online? A series of illustrations demonstrates the benefits of connecting through the web.',
-	'An award-winning game designed for Introductory Game Design at Cornell.'];
+	'Retelling and redesigning the story of me through my portfolio. Coming soon.',
+	'How might we cultivate healthy relationships online? A series of illustrations demonstrates the benefits of connecting through the web. Coming soon.',
+	'An award-winning game designed for Introductory Game Design at Cornell. Coming soon.'];
 
 	var roles = ['UX, PRODUCT DESIGN',
 	'CREATIVE DIRECTOR, DATA VISUALIZATION',
@@ -32,8 +37,15 @@ function projectsList2(){
 	var divAttach = document.getElementById('projects-list-2');
 	var projectBuild = [];
 	for (var i=0;i<navTitles.length;i++){
-		var navbarItem = "<li><p class='project-title-2'><a href="+navLink[i]+">"+navTitles[i]+"</a></p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li>";
-		projectBuild.push(navbarItem);
+		if (navTitles[i] == 'Portfolio Evolution: Case Study' || navTitles[i] == 'Hang: Illustration Series' || navTitles[i] == 'Operation Bitwise'){
+			var navbarItem = "<li><p class='project-title-2'>"+navTitles[i]+"</p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li>";
+			projectBuild.push(navbarItem);
+		}
+		else{
+			var navbarItem = "<li><p class='project-title-2'><a href="+navLink[i]+">"+navTitles[i]+"</a></p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li>";
+			projectBuild.push(navbarItem);
+		}
+		
 	}
 	console.log(projectBuild);
 	console.log(divAttach);
