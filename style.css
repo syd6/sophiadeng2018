@@ -260,7 +260,7 @@ margin bottom for major sections: 4%;
 .external-links{
 	margin-left: 16%;
 }
-#resume{
+.footer-content{
 	float: right;
 	display: inline;
 	margin-right:20%;
@@ -268,11 +268,11 @@ margin bottom for major sections: 4%;
 	padding-top: 5.2%;
 	font-family: "Avenir next";
 }
-#resume a{
+.footer-content a{
 	text-decoration: none;
 	color: #fff;
 }
-#resume a:hover{
+.footer-content a:hover{
 	
 	color: #666;
 }
