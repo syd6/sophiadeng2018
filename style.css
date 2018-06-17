@@ -68,7 +68,7 @@ margin bottom for major sections: 4%;
 	width: 100%;
 	height: auto;
 	background-image: url(images/website-banner-final.jpg);
-	background-color: rgba(63,32,24,12);
+	
 	background-size: cover;
 	display:inline-block;
 }
