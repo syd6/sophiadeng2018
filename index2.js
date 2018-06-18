@@ -54,3 +54,32 @@ function projectsList2(){
 
 
 projectsList2();
+
+var active;
+
+function activeNav(id){
+	var item = document.getElementById(id);
+	item.style.color = "#2F749E";
+}
+
+function buildNav(){
+	var navbar = document.getElementById("navbar");
+	var menuTitle = ['featured', 'other', 'art', 'about'];
+	var links = ['#', '#', '#', '#'];
+	var projectBuild = [];
+	for (var i=0;i<menuTitle.length;i++){
+		var menuItem = "<li class='navitems' id="+menuTitle[i]+">"+menuTitle[i].toUpperCase()+"</li>";
+		projectBuild.push(menuItem);
+	}
+	navbar.innerHTML = projectBuild.join("");
+	
+	var litems = document.getElementsByClassName('navitems');
+	console.log(litems);
+	for (var i=0;i<litems.length;i++){
+		var id = menuTitle[i];
+		litems[i].addEventListener( "click", () => activeNav(id) );
+	}
+}
+
+buildNav();
+
