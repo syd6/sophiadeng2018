@@ -73,9 +73,7 @@ margin bottom for major sections: 4%;
 	display:inline-block;
 }
 
-#about{
-	margin-bottom: 4%;
-}
+
 
 #about h1{
 	margin-left: 16%;
@@ -133,7 +131,32 @@ margin bottom for major sections: 4%;
 	padding-bottom: 2%;
 }
 
+.nav{
+	color: #C5C5C5;
+	margin-top: 3%;
+	margin-left: 16%;
+}
+.nav ul{
 
+	display: inline;
+}
+.nav li{
+	font-family: 'Avenir next';
+	list-style: none;
+	float: left;
+	display: inline;
+	padding-right: 1.5%;
+	font-size: 105%;
+}
+.nav li a{
+	text-decoration: none;
+	color: #C5C5C5;
+}
+
+.nav li a:hover{
+	
+	color: #000;
+}
 /*project-list styling*/
 #projects-list{
 	padding-top: 4%;
@@ -196,13 +219,24 @@ margin bottom for major sections: 4%;
 	margin-right:16%;
 	padding-top: 3%;
 	padding-bottom: 0%;
-	font-size: 160%;
+	font-size: 140%;
+}
+#portfolio-heading a{
+	color: #89A2CF;
+	font-size: 90%;
+	text-decoration: none;
+}
+#portfolio-heading a:hover{
+	
+	-webkit-transition: all .1s linear;
+	color: #748AB1;
+	text-decoration: underline;
 }
 
 #projects-list-2{
 	margin-left: 16%;
 	margin-right: 16%;
-	padding-top:1%;
+	
 }
 
 #projects-list-2 ul{
@@ -273,7 +307,7 @@ margin bottom for major sections: 4%;
 	color: #fff;
 }
 .footer-content a:hover{
-	
+	-webkit-transition: all .2s linear;
 	color: #666;
 }
 .buttonz{
