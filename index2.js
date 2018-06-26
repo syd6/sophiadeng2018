@@ -12,7 +12,7 @@ function projectsList2(){
 	var navLink=['https://medium.com/@sophiadeng/instagram-concept-diversifying-content-for-business-profiles-3ffe18f5df64',
 	'https://medium.com/@sophiadeng/the-creation-of-how-well-do-you-know-your-classmates-448fb9cbedf2', 
 	'https://medium.com/@sophiadeng/the-cost-of-human-life-41d99f55f951',
-	'project.html',
+	'https://medium.com/@sophiadeng/raw-expo-the-cornell-daily-sun-5232187dc6ac',
 	'https://medium.com/@sophiadeng/personal-website-evolution-the-story-of-me-bda5cdd1e479', 
 	'https://medium.com/@sophiadeng/hang-cultivating-more-meaningful-relationships-online-b0809bdf4a2d',
 	'project.html'
@@ -42,7 +42,7 @@ function projectsList2(){
 			projectBuild.push(navbarItem);
 		}
 		else{
-			var navbarItem = "<li><p class='project-title-2'><a href="+navLink[i]+">"+navTitles[i]+"</a></p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li>";
+			var navbarItem = "<li><p class='project-title-2'><a href="+navLink[i]+" target='_blank'>"+navTitles[i]+"</a></p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li>";
 			projectBuild.push(navbarItem);
 		}
 		
@@ -64,21 +64,27 @@ function activeNav(id){
 
 function buildNav(){
 	var navbar = document.getElementById("navbar");
-	var menuTitle = ['featured', 'other', 'art', 'about'];
-	var links = ['#', '#', '#', '#'];
+	var menuTitle = ['projects', 'art'];
+	var links = ['#', 'https://instagram.com/dengsoph_art'];
 	var projectBuild = [];
 	for (var i=0;i<menuTitle.length;i++){
-		var menuItem = "<li class='navitems' id="+menuTitle[i]+">"+menuTitle[i].toUpperCase()+"</li>";
+		if (menuTitle[i] == 'projects'){
+			var menuItem = "<li class='navitems' id="+menuTitle[i]+"><a href=''>"+menuTitle[i].toUpperCase()+"</a></li>";
+		}
+		else{
+			var menuItem = "<li class='navitems' id="+menuTitle[i]+"><a href="+links[i]+" target='_blank'>"+menuTitle[i].toUpperCase()+"</a></li>";
+		}
 		projectBuild.push(menuItem);
 	}
 	navbar.innerHTML = projectBuild.join("");
 	
-	var litems = document.getElementsByClassName('navitems');
+	/*var litems = document.getElementsByClassName('navitems');
 	console.log(litems);
 	for (var i=0;i<litems.length;i++){
 		var id = menuTitle[i];
 		litems[i].addEventListener( "click", () => activeNav(id) );
-	}
+
+	}*/
 }
 
 buildNav();
