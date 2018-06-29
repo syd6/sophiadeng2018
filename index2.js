@@ -6,7 +6,7 @@ function projectsList2(){
 	'RAW Expo: The Cornell Daily Sun', 
 	'Operation Bitwise',
 	'Portfolio Evolution: Case Study', 
-	'Hang: Illustration Series'];
+	'Commissioned Works'];
 
 	//they all link to the same page, which generates code based on what project you select
 	var navLink=['https://medium.com/@sophiadeng/instagram-concept-diversifying-content-for-business-profiles-3ffe18f5df64',
@@ -25,7 +25,7 @@ function projectsList2(){
 	'Designing an interactive exhibition that narrates the evolution and role of one of the nation&#39;s oldest college papers, The Cornell Daily Sun.',
 		'An award-winning game designed for Introductory Game Design at Cornell. I was the primary artist and designed our <a class="inline-link" href="merged.pdf" target="_blank">game manual.</a>',
 	'Retelling and redesigning the story of me through my portfolio. Coming soon.',
-	'How might we cultivate healthy relationships online? A series of illustrations demonstrates the benefits of connecting through the web. Coming soon.'
+	'A collection of commissioned pieces of art that I have done over the years. Coming soon.'
 	];
 
 	var roles = ['UX, PRODUCT DESIGN',
@@ -34,13 +34,13 @@ function projectsList2(){
 	'INTERACTIVE DESIGN',
 	'GAME DESIGN, ILLUSTRATION',
 	'UX, VISUAL DESIGN',
-	'ILLUSTRATION BRANDING, VISUAL DESIGN'
+	'ILLUSTRATION, BRANDING, VISUAL DESIGN'
 	];
 
 	var divAttach = document.getElementById('projects-list-2');
 	var projectBuild = [];
 	for (var i=0;i<navTitles.length;i++){
-		if (navTitles[i] == 'Portfolio Evolution: Case Study' || navTitles[i] == 'Hang: Illustration Series'){
+		if (navTitles[i] == 'Portfolio Evolution: Case Study' || navTitles[i] == 'Commissioned Works'){
 			var navbarItem = "<li><p class='project-title-2'>"+navTitles[i]+"</p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li>";
 			projectBuild.push(navbarItem);
 		}
