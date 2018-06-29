@@ -20,10 +20,10 @@ function projectsList2(){
 	];
 
 	var navDescriptions=['Instagram Business is a powerful and versatile tool. How might we allow users to better showcase their talents?',
-	'Are the stereotypes about Cornell freshmen true? Watch us debunk or confirm some myths on this data visualization project.',
+	'Are the stereotypes about Cornell freshmen true? Watch us debunk or confirm some myths on this data visualization project (reached >16,000 users on Facebook).',
 	'Human mortality rates are decreasing, but at what cost? Practicing visual design in static data visualizations.',
 	'Designing an interactive exhibition that narrates the evolution and role of one of the nation&#39;s oldest college papers, The Cornell Daily Sun.',
-		'An award-winning game designed for Introductory Game Design at Cornell. I was the primary artist and designed our <a class="inline-link" href="merged.pdf" target="_blank">game manual.</a>',
+	'An award-winning game designed for Introductory Game Design at Cornell. I was the primary artist and designed our <a class="inline-link" href="merged.pdf" target="_blank">game manual.</a>',
 	'Retelling and redesigning the story of me through my portfolio. Coming soon.',
 	'A collection of commissioned pieces of art that I have done over the years. Coming soon.'
 	];
