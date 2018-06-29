@@ -5,6 +5,7 @@ function projectsList2(){
 	'The Cost of Human Life', 
 	'RAW Expo: The Cornell Daily Sun', 
 	'Operation Bitwise',
+	'How the Pumpkin Got on the Tower',
 	'Portfolio Evolution: Case Study', 
 	'Commissioned Works'];
 
@@ -14,6 +15,7 @@ function projectsList2(){
 	'https://medium.com/@sophiadeng/the-cost-of-human-life-41d99f55f951',
 	'https://medium.com/@sophiadeng/raw-expo-the-cornell-daily-sun-5232187dc6ac',
 	'https://medium.com/@sophiadeng/operation-bitwise-3ab442cb37',
+	'http://projects.cornellsun.com/projects/pumpkin-feature/',
 	'https://medium.com/@sophiadeng/personal-website-evolution-the-story-of-me-bda5cdd1e479', 
 	'https://medium.com/@sophiadeng/hang-cultivating-more-meaningful-relationships-online-b0809bdf4a2d'
 	
@@ -24,6 +26,7 @@ function projectsList2(){
 	'Human mortality rates are decreasing, but at what cost? Practicing visual design in static data visualizations.',
 	'Designing an interactive exhibition that narrates the evolution and role of one of the nation&#39;s oldest college papers, The Cornell Daily Sun.',
 	'An award-winning game designed for Introductory Game Design at Cornell. I was the primary artist and designed our <a class="inline-link" href="merged.pdf" target="_blank">game manual.</a>',
+	'How did a 60-pound gourd mysteriously appear on the clocktower? We worked with former Editor Farhad Manjoo to revive the tale. (reached >27,000 users on Facebook, linked to by <a class="inline-link" href="https://www.npr.org/sections/thetwo-way/2017/10/31/561217424/after-20-years-can-cornell-finally-bust-open-its-great-pumpkin-mystery">NPR</a>).',
 	'Retelling and redesigning the story of me through my portfolio. Coming soon.',
 	'A collection of commissioned pieces of art that I have done over the years. Coming soon.'
 	];
@@ -33,6 +36,7 @@ function projectsList2(){
 	'VISUAL DESIGN, DATA VISUALIZATION',
 	'INTERACTIVE DESIGN',
 	'GAME DESIGN, ILLUSTRATION',
+	'CREATIVE DIRECTOR, DEVELOPER',
 	'UX, VISUAL DESIGN',
 	'ILLUSTRATION, BRANDING, VISUAL DESIGN'
 	];
