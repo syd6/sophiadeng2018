@@ -18,7 +18,6 @@ function projectsList2(){
 	'http://projects.cornellsun.com/projects/pumpkin-feature/',
 	'https://medium.com/@sophiadeng/personal-website-evolution-the-story-of-me-bda5cdd1e479', 
 	'https://medium.com/@sophiadeng/hang-cultivating-more-meaningful-relationships-online-b0809bdf4a2d'
-	
 	];
 
 	var navDescriptions=['Instagram Business is a powerful and versatile tool. How might we allow users to better showcase their talents?',
@@ -45,11 +44,11 @@ function projectsList2(){
 	var projectBuild = [];
 	for (var i=0;i<navTitles.length;i++){
 		if (navTitles[i] == 'Portfolio Evolution: Case Study' || navTitles[i] == 'Commissioned Works'){
-			var navbarItem = "<li><p class='project-title-2'>"+navTitles[i]+"</p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li>";
+			var navbarItem = "<div class='main-projects'><li><p class='project-title-2'>"+navTitles[i]+"</p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li></div>";
 			projectBuild.push(navbarItem);
 		}
 		else{
-			var navbarItem = "<li><p class='project-title-2'><a href="+navLink[i]+" target='_blank'>"+navTitles[i]+"</a></p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li>";
+			var navbarItem = "<div class='main-projects'><li><p class='project-title-2'><a href="+navLink[i]+" target='_blank'>"+navTitles[i]+"</a></p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li></div>";
 			projectBuild.push(navbarItem);
 		}
 		
@@ -69,21 +68,75 @@ function activeNav(id){
 	item.style.color = "#2F749E";
 }
 
+function projectVisibility(projectBuildType){
+	var mainDiv = document.getElementsByClassName("main-projects")
+	// for loop: 
+	for (project of mainDiv){
+		project.style.display = "none";
+	}
+	projectBuildType();
+}
+
+function buildOtherProjects(){
+	var navTitles=[
+	'Snowfall', 
+	'Website Redesign: Sun Blogs Section',
+	'Microsoft: Manifest Designer'
+	];
+	//they all link to the same page, which generates code based on what project you select
+	var navLink=['https://syd6.github.io/snowfall',
+	'https://medium.com/@sophiadeng/rebranding-the-cornell-daily-sun-blogs-section-1e87ac46afa5', 
+	'#',
+	];
+
+	var navDescriptions=['A fun web experiment in animation, parallax, and illustration.',
+	'A case study in making The Cornell Daily Sun: Blogs website more easily navigable and appealing. Visit the site <a class="inline-link" target="_blank" href="http://sunspots.cornellsun.com/">here</a>.',
+	'Designed and implemented a GUI-based React web app for creating Add-In manifests. Removes the need to code and returns a fully functional XML manifest.',
+	];
+
+	var roles = ['ILLUSTRATION, ANIMATION',
+	'UX, PRODUCT THINKING',
+	'DEV, USABILITY',
+	];
+
+	var divAttach = document.getElementById('projects-list-2');
+	var projectBuild = [];
+	for (var i=0;i<navTitles.length;i++){
+		if (navTitles[i] == 'Microsoft: Manifest Designer'){
+			var navbarItem = "<div class='main-projects'><li><p class='project-title-2'>"+navTitles[i]+"</p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li></div>";
+			projectBuild.push(navbarItem);
+		}
+		else{
+			var navbarItem = "<div class='main-projects'><li><p class='project-title-2'><a href="+navLink[i]+" target='_blank'>"+navTitles[i]+"</a></p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li></div>";
+			projectBuild.push(navbarItem);
+		}
+		
+	}
+	console.log(projectBuild);
+	console.log(divAttach);
+	divAttach.innerHTML = projectBuild.join("");
+}
+
+
 function buildNav(){
 	var navbar = document.getElementById("navbar");
-	var menuTitle = ['projects', 'art'];
-	var links = ['#', 'https://instagram.com/dengsoph_art'];
+	var menuTitle = ['projects', 'other', 'art'];
+	var links = ['#', '','https://instagram.com/dengsoph_art'];
 	var projectBuild = [];
 	for (var i=0;i<menuTitle.length;i++){
-		if (menuTitle[i] == 'projects'){
-			var menuItem = "<li class='navitems' id="+menuTitle[i]+"><a href=''>"+menuTitle[i].toUpperCase()+"</a></li>";
+		if (menuTitle[i] == 'other' || menuTitle[i] == 'projects'){
+			var menuItem = "<li class='navitems' id="+menuTitle[i]+">"+menuTitle[i].toUpperCase()+"</li>";
+			
 		}
 		else{
 			var menuItem = "<li class='navitems' id="+menuTitle[i]+"><a href="+links[i]+" target='_blank'>"+menuTitle[i].toUpperCase()+"</a></li>";
 		}
 		projectBuild.push(menuItem);
 	}
+
 	navbar.innerHTML = projectBuild.join("");
+	document.getElementById('other').addEventListener("click", ()=> projectVisibility(buildOtherProjects));
+	document.getElementById('projects').addEventListener("click", ()=> projectVisibility(projectsList2));
 	
 	/*var litems = document.getElementsByClassName('navitems');
 	console.log(litems);
@@ -93,6 +146,7 @@ function buildNav(){
 
 	}*/
 }
+
 
 buildNav();
 
