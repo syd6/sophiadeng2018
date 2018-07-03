@@ -94,7 +94,7 @@ function buildOtherProjects(){
 	'#',
 	];
 
-	var navDescriptions=['A fun web experiment in animation, parallax, and illustration.',
+	var navDescriptions=['A fun web experiment in animation, parallax, and illustration. Makes use of the weather API, sky changes color based on time.',
 	'A case study in creating a brand for The Cornell Sun Blogs website, making it more appealing and easily navigable. Visit the site <a class="inline-link" target="_blank" href="http://sunspots.cornellsun.com/">here</a>.',
 	'Designed and implemented a GUI-based React web app for creating Add-In manifests. Removes the need to code and returns a fully functional XML manifest.',
 	];
