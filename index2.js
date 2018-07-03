@@ -73,6 +73,11 @@ function projectVisibility(projectBuildType){
 	// for loop: 
 	for (project of mainDiv){
 		project.style.display = "none";
+		/* $(document).ready(function(){
+			console.log("is this working")
+		   $(project).fadeOut(900);
+		}); */
+		
 	}
 	projectBuildType();
 }
@@ -90,41 +95,50 @@ function buildOtherProjects(){
 	];
 
 	var navDescriptions=['A fun web experiment in animation, parallax, and illustration.',
-	'A case study in making The Cornell Daily Sun: Blogs website more easily navigable and appealing. Visit the site <a class="inline-link" target="_blank" href="http://sunspots.cornellsun.com/">here</a>.',
+	'A case study in creating a brand for The Cornell Sun Blogs website, making it more appealing and easily navigable. Visit the site <a class="inline-link" target="_blank" href="http://sunspots.cornellsun.com/">here</a>.',
 	'Designed and implemented a GUI-based React web app for creating Add-In manifests. Removes the need to code and returns a fully functional XML manifest.',
 	];
 
 	var roles = ['ILLUSTRATION, ANIMATION',
-	'UX, PRODUCT THINKING',
-	'DEV, USABILITY',
+	'UX, WEB DESIGN',
+	'DEV, PROJECT MANAGEMENT',
 	];
 
 	var divAttach = document.getElementById('projects-list-2');
 	var projectBuild = [];
+	projectBuild.push("<li class='other-caption'>[ A mix of older projects and #justforfun things ]</li>");
 	for (var i=0;i<navTitles.length;i++){
 		if (navTitles[i] == 'Microsoft: Manifest Designer'){
 			var navbarItem = "<div class='main-projects'><li><p class='project-title-2'>"+navTitles[i]+"</p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li></div>";
 			projectBuild.push(navbarItem);
+			
+			// $(divAttach).fadeIn(900).append(navbarItem);
+			
 		}
 		else{
 			var navbarItem = "<div class='main-projects'><li><p class='project-title-2'><a href="+navLink[i]+" target='_blank'>"+navTitles[i]+"</a></p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li></div>";
 			projectBuild.push(navbarItem);
+			
+			// $(divAttach).fadeIn(900).append(navbarItem);
+			
 		}
 		
 	}
+	
 	console.log(projectBuild);
 	console.log(divAttach);
+	
 	divAttach.innerHTML = projectBuild.join("");
 }
 
 
 function buildNav(){
 	var navbar = document.getElementById("navbar");
-	var menuTitle = ['projects', 'other', 'art'];
+	var menuTitle = ['featured', 'other', 'art'];
 	var links = ['#', '','https://instagram.com/dengsoph_art'];
 	var projectBuild = [];
 	for (var i=0;i<menuTitle.length;i++){
-		if (menuTitle[i] == 'other' || menuTitle[i] == 'projects'){
+		if (menuTitle[i] == 'other' || menuTitle[i] == 'featured'){
 			var menuItem = "<li class='navitems' id="+menuTitle[i]+">"+menuTitle[i].toUpperCase()+"</li>";
 			
 		}
@@ -136,7 +150,7 @@ function buildNav(){
 
 	navbar.innerHTML = projectBuild.join("");
 	document.getElementById('other').addEventListener("click", ()=> projectVisibility(buildOtherProjects));
-	document.getElementById('projects').addEventListener("click", ()=> projectVisibility(projectsList2));
+	document.getElementById('featured').addEventListener("click", ()=> projectVisibility(projectsList2));
 	
 	/*var litems = document.getElementsByClassName('navitems');
 	console.log(litems);

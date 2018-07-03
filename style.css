@@ -157,8 +157,16 @@ margin bottom for major sections: 4%;
 	color: #000;
 }
 
-#other, #projects {
+#other, #featured {
 	cursor: pointer;
+}
+
+.other-caption{
+	padding-top: 3%;
+	font-family: "Athelas italic";
+	font-size: 110%;
+	color: #C7C7C7;
+	margin-bottom: -1%;
 }
 /*project-list styling*/
 #projects-list{
@@ -296,7 +304,7 @@ margin bottom for major sections: 4%;
 #body-content{
 	margin-left: 16%;
 	line-height: 2em;
-	margin-bottom: 7%;
+	margin-bottom: 4%;
 	height: 100%;
 }
 #body-content h1{
