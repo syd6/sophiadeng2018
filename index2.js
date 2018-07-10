@@ -86,21 +86,25 @@ function buildOtherProjects(){
 	var navTitles=[
 	'Snowfall', 
 	'Website Redesign: Sun Blogs Section',
+	'How Do YouTube Videos Go Viral?',
 	'Microsoft: Manifest Designer'
 	];
 	//they all link to the same page, which generates code based on what project you select
 	var navLink=['https://syd6.github.io/snowfall',
-	'https://medium.com/@sophiadeng/rebranding-the-cornell-daily-sun-blogs-section-1e87ac46afa5', 
+	'https://medium.com/@sophiadeng/rebranding-the-cornell-daily-sun-blogs-section-1e87ac46afa5',
+	'http://gjs86.me/Salient/index.html', 
 	'#',
 	];
 
 	var navDescriptions=['A fun web experiment in animation, parallax, and illustration. Makes use of the weather API, sky changes color based on time.',
 	'A case study in creating a brand for The Cornell Sun Blogs website, making it more appealing and easily navigable. Visit the site <a class="inline-link" target="_blank" href="http://sunspots.cornellsun.com/">here</a>.',
+	'A data visualization project for INFO 4310 at Cornell, demonstrating how videos spread to and become popular in different countries. Within a team of four, I primarily worked on the visual design.',
 	'Designed and implemented a GUI-based React web app for creating Add-In manifests. Removes the need to code and returns a fully functional XML manifest.',
 	];
 
 	var roles = ['ILLUSTRATION, ANIMATION',
 	'UX, WEB DESIGN',
+	'DATA VISUALIZATION, VISUAL DESIGN',
 	'DEV, PROJECT MANAGEMENT',
 	];
 
