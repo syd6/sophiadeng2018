@@ -1,49 +1,50 @@
 function projectsList2(){
 	
 	var navTitles=['Instagram Concept', 
+	'Olive: Facebook Messenger Concept',
 	'Who is the Class of 2021?', 
 	'The Cost of Human Life', 
 	'RAW Expo: The Cornell Daily Sun', 
 	'Operation Bitwise',
-	'How the Pumpkin Got on the Tower',
-	'Portfolio Evolution: Case Study', 
-	'Commissioned Works'];
+	// 'Portfolio Evolution: Case Study'
+	];
 
 	//they all link to the same page, which generates code based on what project you select
 	var navLink=['https://medium.com/@sophiadeng/instagram-concept-diversifying-content-for-business-profiles-3ffe18f5df64',
+	'',
 	'https://medium.com/@sophiadeng/the-creation-of-how-well-do-you-know-your-classmates-448fb9cbedf2', 
 	'https://medium.com/@sophiadeng/the-cost-of-human-life-41d99f55f951',
 	'https://medium.com/@sophiadeng/raw-expo-the-cornell-daily-sun-5232187dc6ac',
 	'https://medium.com/@sophiadeng/operation-bitwise-3ab442cb37',
-	'http://projects.cornellsun.com/projects/pumpkin-feature/',
-	'https://medium.com/@sophiadeng/personal-website-evolution-the-story-of-me-bda5cdd1e479', 
-	'https://medium.com/@sophiadeng/hang-cultivating-more-meaningful-relationships-online-b0809bdf4a2d'
+	// 'https://medium.com/@sophiadeng/personal-website-evolution-the-story-of-me-bda5cdd1e479', 
+	
 	];
 
 	var navDescriptions=['Instagram Business is a powerful and versatile tool. How might we allow users to better showcase their talents?',
+	'Having a meal is an inherently social activity. How might we allow people to easily make plans with others through Facebook Messenger? Case study coming soon.',
 	'Are the stereotypes about Cornell freshmen true? Watch us debunk or confirm some myths on this data visualization project (reached >16,000 users on Facebook).',
 	'Human mortality rates are decreasing, but at what cost? Practicing visual design in static data visualizations.',
 	'Designing an interactive exhibition that narrates the evolution and role of one of the nation&#39;s oldest college papers, The Cornell Daily Sun.',
 	'An award-winning game designed for Introductory Game Design at Cornell. I was the primary artist and designed our <a class="inline-link" href="merged.pdf" target="_blank">game manual.</a>',
-	'How did a 60-pound gourd mysteriously appear on the clocktower? We worked with former Editor Farhad Manjoo to revive the tale. (reached >27,000 users on Facebook, linked to by <a class="inline-link" href="https://www.npr.org/sections/thetwo-way/2017/10/31/561217424/after-20-years-can-cornell-finally-bust-open-its-great-pumpkin-mystery">NPR</a>).',
-	'Retelling and redesigning the story of me through my portfolio. Coming soon.',
-	'A collection of commissioned pieces of art that I have done over the years. Coming soon.'
+	// 'Retelling and redesigning the story of me through my portfolio. Coming soon.',
+	
 	];
+	// Having a meal is an inherently social activity. how might we allow people to easily make plans with others through facebook messenger?
 
 	var roles = ['UX, PRODUCT DESIGN',
+	'UX, PRODUCT DESIGN',
 	'CREATIVE DIRECTOR, DATA VISUALIZATION',
 	'VISUAL DESIGN, DATA VISUALIZATION',
 	'INTERACTIVE DESIGN',
 	'GAME DESIGN, ILLUSTRATION',
-	'CREATIVE DIRECTOR, DEVELOPER',
-	'UX, VISUAL DESIGN',
-	'ILLUSTRATION, BRANDING, VISUAL DESIGN'
+	// 'UX, VISUAL DESIGN',
+	
 	];
 
 	var divAttach = document.getElementById('projects-list-2');
 	var projectBuild = [];
 	for (var i=0;i<navTitles.length;i++){
-		if (navTitles[i] == 'Portfolio Evolution: Case Study' || navTitles[i] == 'Commissioned Works'){
+		if (navTitles[i] == 'Portfolio Evolution: Case Study' || navTitles[i] == 'Olive: Facebook Messenger Concept'){
 			var navbarItem = "<div class='main-projects'><li><p class='project-title-2'>"+navTitles[i]+"</p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li></div>";
 			projectBuild.push(navbarItem);
 		}
@@ -87,24 +88,28 @@ function buildOtherProjects(){
 	'Snowfall', 
 	'Website Redesign: Sun Blogs Section',
 	'How Do YouTube Videos Go Viral?',
+	'How the Pumpkin Got on the Tower',
 	'Microsoft: Manifest Designer'
 	];
 	//they all link to the same page, which generates code based on what project you select
 	var navLink=['https://syd6.github.io/snowfall',
 	'https://medium.com/@sophiadeng/rebranding-the-cornell-daily-sun-blogs-section-1e87ac46afa5',
 	'http://gjs86.me/Salient/index.html', 
+	'http://projects.cornellsun.com/projects/pumpkin-feature/',
 	'#',
 	];
 
 	var navDescriptions=['A fun web experiment in animation, parallax, and illustration. Makes use of the weather API, sky changes color based on time.',
 	'A case study in creating a brand for The Cornell Sun Blogs website, making it more appealing and easily navigable. Visit the site <a class="inline-link" target="_blank" href="http://sunspots.cornellsun.com/">here</a>.',
 	'A data visualization project for INFO 4310 at Cornell, demonstrating how videos spread to and become popular in different countries. Within a team of four, I primarily worked on the visual design.',
+	'How did a 60-pound gourd mysteriously appear on the clocktower? We worked with former Editor Farhad Manjoo to revive the tale. (reached >27,000 users on Facebook, linked to by <a class="inline-link" href="https://www.npr.org/sections/thetwo-way/2017/10/31/561217424/after-20-years-can-cornell-finally-bust-open-its-great-pumpkin-mystery">NPR</a>).',
 	'Designed and implemented a GUI-based React web app for creating Add-In manifests. Removes the need to code and returns a fully functional XML manifest.',
 	];
 
 	var roles = ['ILLUSTRATION, ANIMATION',
 	'UX, WEB DESIGN',
 	'DATA VISUALIZATION, VISUAL DESIGN',
+	'CREATIVE DIRECTOR, DEVELOPER',
 	'DEV, PROJECT MANAGEMENT',
 	];
 
