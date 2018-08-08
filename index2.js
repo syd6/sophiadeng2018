@@ -21,7 +21,7 @@ function projectsList2(){
 	];
 
 	var navDescriptions=['Instagram Business is a powerful and versatile tool. How might we allow users to better showcase their talents?',
-	'Having a meal is an inherently social activity. How might we allow people to easily make plans with others through Facebook Messenger? Case study coming soon.',
+	'Having a meal is an inherently social activity. How might we allow people to easily make food plans with others through Messenger? Case study coming soon.',
 	'Are the stereotypes about Cornell freshmen true? Watch us debunk or confirm some myths on this data visualization project (reached >16,000 users on Facebook).',
 	'Human mortality rates are decreasing, but at what cost? Practicing visual design in static data visualizations.',
 	'Designing an interactive exhibition that narrates the evolution and role of one of the nation&#39;s oldest college papers, The Cornell Daily Sun.',
@@ -35,7 +35,7 @@ function projectsList2(){
 	'UX, PRODUCT DESIGN',
 	'CREATIVE DIRECTOR, DATA VISUALIZATION',
 	'VISUAL DESIGN, DATA VISUALIZATION',
-	'INTERACTIVE DESIGN',
+	'CREATIVE DIRECTOR, INTERACTIVE EXHIBITION',
 	'GAME DESIGN, ILLUSTRATION',
 	// 'UX, VISUAL DESIGN',
 	
