@@ -11,7 +11,7 @@ function projectsList2(){
 
 	//they all link to the same page, which generates code based on what project you select
 	var navLink=['https://medium.com/@sophiadeng/instagram-concept-diversifying-content-for-business-profiles-3ffe18f5df64',
-	'',
+	'https://medium.com/@sophiadeng/olive-a-preview-b1d86befc816',
 	'https://medium.com/@sophiadeng/the-creation-of-how-well-do-you-know-your-classmates-448fb9cbedf2', 
 	'https://medium.com/@sophiadeng/the-cost-of-human-life-41d99f55f951',
 	'https://medium.com/@sophiadeng/raw-expo-the-cornell-daily-sun-5232187dc6ac',
@@ -21,7 +21,7 @@ function projectsList2(){
 	];
 
 	var navDescriptions=['Instagram Business is a powerful and versatile tool. How might we allow users to better showcase their talents?',
-	'Having a meal is an inherently social activity. How might we allow people to easily make plans with others through Facebook Messenger? Case study coming soon.',
+	'Having a meal is an inherently social activity. How might we allow people to easily make food plans with others through Messenger? Full case study coming soon.',
 	'Are the stereotypes about Cornell freshmen true? Watch us debunk or confirm some myths on this data visualization project (reached >16,000 users on Facebook).',
 	'Human mortality rates are decreasing, but at what cost? Practicing visual design in static data visualizations.',
 	'Designing an interactive exhibition that narrates the evolution and role of one of the nation&#39;s oldest college papers, The Cornell Daily Sun.',
@@ -35,7 +35,7 @@ function projectsList2(){
 	'UX, PRODUCT DESIGN',
 	'CREATIVE DIRECTOR, DATA VISUALIZATION',
 	'VISUAL DESIGN, DATA VISUALIZATION',
-	'INTERACTIVE DESIGN',
+	'CREATIVE DIRECTOR, INTERACTIVE EXHIBITION',
 	'GAME DESIGN, ILLUSTRATION',
 	// 'UX, VISUAL DESIGN',
 	
@@ -44,7 +44,7 @@ function projectsList2(){
 	var divAttach = document.getElementById('projects-list-2');
 	var projectBuild = [];
 	for (var i=0;i<navTitles.length;i++){
-		if (navTitles[i] == 'Portfolio Evolution: Case Study' || navTitles[i] == 'Olive: Facebook Messenger Concept'){
+		if (navTitles[i] == 'Portfolio Evolution: Case Study'){
 			var navbarItem = "<div class='main-projects'><li><p class='project-title-2'>"+navTitles[i]+"</p></li><li><p class='project-description-2'>"+navDescriptions[i]+"</p></li><li><p class='project-role-2'>"+roles[i]+"</p></li></div>";
 			projectBuild.push(navbarItem);
 		}
