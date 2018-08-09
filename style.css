@@ -21,6 +21,7 @@
 
 body{
 	margin: 0px;
+	padding: 0px;
 }
 h1{
 	font-family: 'Athelas';
@@ -68,7 +69,6 @@ margin bottom for major sections: 4%;
 	width: 100%;
 	height: auto;
 	background-image: url(images/website-banner-final.jpg);
-	
 	background-size: cover;
 	display:inline-block;
 }
@@ -304,13 +304,12 @@ margin bottom for major sections: 4%;
 #body-content{
 	margin-left: 16%;
 	line-height: 2em;
-	
 	height: 100%;
 }
 #body-content h1{
-	margin-top: 7%;
+	padding-top: 5%;
 	padding-bottom: 2%;
-	font-size: 190%;
+	font-size: 240%;
 	font-family: 'Athelas';
 	font-weight: lighter;
 	font-weight: normal;
@@ -322,10 +321,9 @@ margin bottom for major sections: 4%;
 	font-family: 'Avenir next';
 	font-size: 100%;
 	width: 55%;
-	margin-top: -1%;
 	color: #5B5B5B;
 	letter-spacing: 0.03em;
-	padding-bottom: 3%;
+	padding-bottom: 1%;
 }
 
 #body-content p a{
